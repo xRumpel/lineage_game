@@ -13,11 +13,11 @@ class Warrior():
 
     def sleep(self):
         print(f'{self.name} is sleeping')
-        self.constitution += 2
+        self.constitution += 5
 
     def eat(self):
         print(f'{self.name} is eating')
-        self.constitution += 5
+        self.strength += 5
 
     def hit(self):
         print(f'{self.name} is hitting')
@@ -37,21 +37,17 @@ class Warrior():
 #Создаем 1го воина
 
 Infantry = Warrior('Rumpel', 60, 40, 30)
-cavalry = Warrior('Pegas', 40, 50, 40)
-print(Infantry.name)
-print(Infantry.constitution)
-print(Infantry.strength)
-print(Infantry.dexterity)
+Cavalry = Warrior('Pegas', 40, 50, 40)
 
+Infantry.sleep()
+Infantry.eat()
+Infantry.hit()
+Infantry.run()
 Infantry.show_stats()
 
-print(cavalry.name)
-print(cavalry.constitution)
-print(cavalry.strength)
-print(cavalry.dexterity)
-
-cavalry.show_stats()
-
-
-
+Cavalry.sleep()
+Cavalry.eat()
+Cavalry.hit()
+Cavalry.run()
+Cavalry.show_stats()
 
